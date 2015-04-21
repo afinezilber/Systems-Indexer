@@ -1,0 +1,83 @@
+Allon Finezilber
+Michael Ferrera
+Test Cases
+Assignment 3
+--------------
+
+Directory PA3
+	Sub Directories: A, B, C
+		Subdirectoy of C -> D
+		A: a.txt b.txt c.txt
+		B: d.txt e.txt
+		C: f.txt g.txt 
+			C->D: h.txt
+
+Contents of files:
+DIR A:
+a.txt: today is sunny
+b.txt: yesterday was sunny
+c.txt: i like yesterday
+
+DIR B:
+d.txt: today is yesterday
+e.txt: i am yesterday
+
+DIR C:
+f.txt: sunday morning was sunny
+g.txt: tomorrow is tuesday is sunny sunny sunny sunny
+h.txt: tomorrow tomorrow today morning morning
+
+
+Input:
+------
+
+./indexer file.txt /.autofs/ilab/ilab_user/asf97/Desktop/PA3
+
+
+Output:
+-------
+
+<list> i
+c.txt 1 e.txt 1
+</list>
+
+<list> is
+a.txt 1 d.txt 1 g.txt 2
+</list>
+
+<list> like
+c.txt 1 
+</list>
+
+<list> morning
+f.txt 1 h.txt 2
+</list>
+
+<list> sunday
+f.txt 1
+</list>
+
+<list> sunny
+a.txt 1 b.txt 1 f.txt 1 g.txt 4
+</list>
+
+<list> today
+a.txt 1 d.txt 1 h.txt 1
+</list>
+
+<list> tomorrow
+g.txt 1 h.txt 2
+</list>
+
+<list> tuesday
+g.txt 1
+</list>
+
+<list> was
+b.txt 1 f.txt 2
+</list>
+
+<list> yesterday
+c.txt 1 d.txt 1 e.txt 2
+</list>
+
